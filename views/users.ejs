@@ -1,0 +1,32 @@
+
+
+<div id="main">
+	<div>
+	    My name: <input type="text" id="my-name"> <button id="update-name">Update</button>
+	</div>
+	<h1>Users online</h1>
+	<div>
+	    <select id="users-list" size="5" hidden="true"></select>
+      <select id="units-list" size="5" hidden="true"></select>
+
+	    <button id="private-msg-button" hidden="true">Send private message to selected user</button>
+      <button id="private-msg-button" hidden="true">Send private message to selected unit</button>
+    <div id="convos-unit"></div>
+
+	    <div id="convos"></div>
+	</div>
+	<h1>Emergency Channels</h1>
+	<div>
+	    <select id="channels-list" size="5"></select>
+	    <button id="join-channel">Join selected emergency channel</button>
+	    <button id="new-channel">Start a new emergency channel</button>
+	    <div id="channels"></div>
+	</div>
+</div>
+<div id="disconnect" style="display:none">Waiting for reconnect...</div>
+<script src="/js/dependencies/sails.io.js"></script>
+<script src="/js/jquery.js"></script>
+<script src="/users/app_users.js"></script>
+<script src="/js/private_message_user.js"></script>
+
+<script src="/js/public_message_user.js"></script>
